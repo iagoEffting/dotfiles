@@ -14,7 +14,7 @@ Make sure your VIM is up-to-date (this is only test with VIM >7.3), eg. for linu
 
 In your root directory (cd ~), get the latest code from the repo:
   
->  git clone git@github.com/iagoEffting/dotfiles.git
+>  git clone git@github.com:iagoEffting/dotfiles.git
 
 Create symbolic link so that ~/.vimrc points to the ~/dotfiles/.vimrc file:
 
