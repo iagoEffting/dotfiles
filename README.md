@@ -12,9 +12,11 @@ Make sure your VIM is up-to-date (this is only test with VIM >7.3), eg. for linu
 
 > sudo apt-get install vim
 
-Install zsh and oh-my-zsh
+Install zsh 
 
 > sudo apt-get install zsh
+
+Install Oh-my-zsh
 
 Link for [oh-my-zsh quick Installation](https://github.com/robbyrussell/oh-my-zsh)
 
