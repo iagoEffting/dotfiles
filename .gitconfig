@@ -1,0 +1,15 @@
+[user]
+  name = Iago Effting
+  email = iago.effting@gmail.com
+
+[github]
+  user = iagoEffting
+
+[github] 
+  user = iagoEffting
+[core]
+  editor = vim
+[alias]
+  co = checkout
+  ci = commit
+  st = status
