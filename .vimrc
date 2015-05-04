@@ -3,6 +3,7 @@ filetype off
 
 " ==== Theme ==== 
 colorscheme gruvbox
+set bg=dark
 
 " ==== General Configs ====
 let mapleader=","

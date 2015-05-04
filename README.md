@@ -1,5 +1,6 @@
 ## VIM
 # Which plugins I use
+* [Vundle.vim](https://github.com/gmarik/Vundle.vim) - Vundle, the plug-in manager for Vim 
 * [NERD Tree](https://github.com/scrooloose/nerdtree) - Folder explorer panel to find/open/create/etc files (<leader>n == ,n).
 * [Fugitive](https://github.com/tpope/vim-fugitive) - Git commands in VIM
 * [surround.vim](https://github.com/tpope/vim-surround) - Change surrounding items, eg. "Hello" to 'Hello' (cs"').
@@ -33,6 +34,10 @@ Create symbolic link so that ~/.vimrc points to the ~/dotfiles/.vimrc file:
 Create symbolic link so that ~/.vim/ points to the ~/dotfiles/.vim/ file:
 
 >  ln -s ~/dotfiles/.vim ~/.vim
+
+Install Vundle for management your Plugins
+
+> git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 Crate a symbolic link so that ~/.zshrc points to the ~/dotfiles/.zshrc
 
