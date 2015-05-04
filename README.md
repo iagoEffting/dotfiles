@@ -15,7 +15,8 @@ Make sure your VIM is up-to-date (this is only test with VIM >7.3), eg. for linu
 Install zsh and oh-my-zsh
 
 > sudo install zsh
-> [Quick Install oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+
+Link for [oh-my-zsh quick Installation](https://github.com/robbyrussell/oh-my-zsh)
 
 In your root directory (cd ~), get the latest code from the repo:
   
