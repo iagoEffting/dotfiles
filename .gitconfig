@@ -1,11 +1,31 @@
+[core]
+  editor = vim
+[commit]
+  template = ~/.gitmessage.txt
 [user]
   name = Iago Effting
   email = iago.effting@gmail.com
-[github] 
-  user = iagoEffting
-[core]
-  editor = vim
+[branch]
+  autosetuprebase = always
+[branch "master"]
+  rebase = true
+[push]
+  default = current
+[pull]
+  default = current
+[color]
+  ui = true
+  diff = auto
+  branch = auto
+  interactive = auto
+[color "status"]
+  added = green
+  changed = blue
+  untracked = magenta
+  deleted = red
 [alias]
   co = checkout
-  ci = commit
   st = status
+[diff]
+  mnemonicprefix = true
+  algorithm = patience
