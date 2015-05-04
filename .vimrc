@@ -19,6 +19,7 @@ set showfulltag                         " show full completion tags
 set showmode                            " show mode on last line of the screen
 set linebreak
 set cursorline
+set guifont=Inconsolata\ XL:h14,Inconsolata:h15,Monaco:17,Monospace
 
 " ==== Git Config ====
 let g:snips_author = "Iago Effting"
@@ -32,6 +33,9 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set expandtab
+
+" ==== Tab ====
+nmap <leader>t :tabe<cr>
 
 " ==== Search ====
 set incsearch       " Find the next match as we type the search
