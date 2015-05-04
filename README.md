@@ -17,7 +17,6 @@ Install zsh
 > sudo apt-get install zsh
 
 Install Oh-my-zsh
-
 Link for [oh-my-zsh quick Installation](https://github.com/robbyrussell/oh-my-zsh)
 
 In your root directory (cd ~), get the latest code from the repo:
