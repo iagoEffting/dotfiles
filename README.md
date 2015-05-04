@@ -44,3 +44,9 @@ Crate a symbolic link so that ~/.zshrc points to the ~/dotfiles/.zshrc
 > ln -s ~/dotfiles/.zshrc ~/.zshrc
 
 Close your bash and open again.
+
+# Extra! (Environment)
+I wrote a article about dev environment using Vagrant in pt-br. If you want to see, this is the link:
+[Criando ambientes isolados de desenvolvimento com Vagrant](http://codetython.com.br/criando-ambientes-isolados-de-desenvolvimento-com-vagrant/)
+
+Enjoy!
