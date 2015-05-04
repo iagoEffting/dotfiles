@@ -8,7 +8,6 @@
 * [vim-gitgutter](https://github.com/airblade/vim-gitgutter) - A Vim plugin which shows a git diff in the 'gutter' (sign column) 
 * [ag.vim](https://github.com/rking/ag.vim) - Search recursively in {directory} (which defaults to the current directory) for the {pattern}. 
 
-
 ## Setup
 # Dependencies
 Make sure your VIM is up-to-date (this is only test with VIM >7.3), eg. for linux:
