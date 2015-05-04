@@ -12,6 +12,11 @@ Make sure your VIM is up-to-date (this is only test with VIM >7.3), eg. for linu
 
 > sudo apt-get install vim
 
+Install zsh and oh-my-zsh
+
+> sudo install zsh
+> [Quick Install oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+
 In your root directory (cd ~), get the latest code from the repo:
   
 >  git clone git@github.com:iagoEffting/dotfiles.git
@@ -24,3 +29,6 @@ Create symbolic link so that ~/.vim/ points to the ~/dotfiles/.vim/ file:
 
 >  ln -s ~/dotfiles/.vim ~/.vim
 
+Crate a symbolic link so that ~/.zshrc points to the ~/dotfiles/.zshrc
+
+> ln -s ~/dotfiles/.zshrc ~/.zshrc
