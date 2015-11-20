@@ -71,6 +71,17 @@ NeoBundle 'bling/vim-airline'
 " Search
 NeoBundleFetch "rking/ag.vim"
 
+" PHP
+NeoBundle 'arnaud-lb/vim-php-namespace'
+
+" Ruby
+NeoBundle "tpope/vim-rails"
+NeoBundle "tpope/vim-rake"
+NeoBundle "tpope/vim-projectionist"
+NeoBundle "thoughtbot/vim-rspec"
+NeoBundle "majutsushi/tagbar"
+NeoBundle "ecomba/vim-ruby-refactoring"
+
 call neobundle#end()
 
 filetype plugin indent on
