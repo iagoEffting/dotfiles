@@ -1,5 +1,5 @@
 syntax on
-filetype off
+filetype on
 
 " ==== Theme ==== 
 colorscheme gruvbox
@@ -44,30 +44,44 @@ nnoremap <cr> :nohlsearch<cr>
 set noswapfile
 set nobackup
 set nowb
+set backspace=indent,eol,start
+
+" ====
+" Note: Skip initialization 
+if 0 | endif
+
+if has('vim_starting')
+
+  if &compatible
+    set nocompatible  
+  endif
+
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
 
 " ==== Plugins ====
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
-Plugin 'tomtom/tcomment_vim'
+NeoBundleFetch 'tpope/vim-fugitive'
+NeoBundleFetch 'scrooloose/nerdtree'
+NeoBundleFetch 'kien/ctrlp.vim'
+NeoBundleFetch 'tomtom/tcomment_vim'
 
 " Git
-Plugin 'airblade/vim-gitgutter'
-Plugin 'L9'
+NeoBundleFetch 'airblade/vim-gitgutter'
+NeoBundleFetch 'L9'
 
 " Text editing
-Bundle "terryma/vim-multiple-cursors"
-Bundle "tpope/vim-surround.git"
+NeoBundleFetch "terryma/vim-multiple-cursors"
+NeoBundleFetch "tpope/vim-surround.git"
 
 " Search
-Bundle "rking/ag.vim"
+NeoBundleFetch "rking/ag.vim"
 
-call vundle#end()
+
+call neobundle#end()
+
 filetype plugin indent on
 
 " ==== Completion ====
