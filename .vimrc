@@ -24,15 +24,6 @@ set cursorline
 let g:snips_author = "Iago Effting"
 let g:github_user = "iagoEffting"
 
-" ==== Indentation ====
-set autoindent
-set smartindent
-set smarttab
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
-set expandtab
-
 " ==== Search ====
 set incsearch       " Find the next match as we type the search
 set hlsearch        " Highlight searches by default
@@ -75,10 +66,10 @@ NeoBundleFetch 'L9'
 " Text editing
 NeoBundleFetch "terryma/vim-multiple-cursors"
 NeoBundleFetch "tpope/vim-surround.git"
+NeoBundle 'bling/vim-airline'
 
 " Search
 NeoBundleFetch "rking/ag.vim"
-
 
 call neobundle#end()
 
@@ -97,6 +88,9 @@ set wildignore+=*.gem
 set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
+
+" Airline
+set laststatus=2
 
 " CtrlP shortcuts
 let g:ctrlp_map = '<c-p>'
