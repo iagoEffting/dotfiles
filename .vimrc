@@ -4,6 +4,7 @@ filetype on
 " ==== Theme ==== 
 colorscheme gruvbox
 set bg=dark
+set relativenumber 
 
 " ==== General Configs ====
 let mapleader=","
@@ -29,7 +30,7 @@ set incsearch       " Find the next match as we type the search
 set hlsearch        " Highlight searches by default
 set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
-nnoremap <cr> :nohlsearch<cr>
+nnoremap <silent><leader><space> :silent :nohlsearch<CR>
 
 " ==== Swap Files OFF ====
 set noswapfile
@@ -55,24 +56,43 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
 " let Vundle manage Vundle, required
 NeoBundleFetch 'tpope/vim-fugitive'
-NeoBundleFetch 'scrooloose/nerdtree'
-NeoBundleFetch 'kien/ctrlp.vim'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundleFetch 'tomtom/tcomment_vim'
+NeoBundle 'easymotion/vim-easymotion'
 
 " Git
 NeoBundleFetch 'airblade/vim-gitgutter'
 NeoBundleFetch 'L9'
+NeoBundle 'mattn/gist-vim', {'depends': 'mattn/webapi-vim'}
 
 " Text editing
 NeoBundleFetch "terryma/vim-multiple-cursors"
 NeoBundleFetch "tpope/vim-surround.git"
 NeoBundle 'bling/vim-airline'
+NeoBundle 'suan/vim-instant-markdown'
 
 " Search
 NeoBundleFetch "rking/ag.vim"
 
+" Docker
+NeoBundle 'ekalinin/Dockerfile.vim'
+
+" Tmux
+NeoBundleFetch 'christoomey/vim-tmux-navigator'
+
 " PHP
 NeoBundle 'arnaud-lb/vim-php-namespace'
+NeoBundle 'Shougo/vimproc', {
+      \ 'build' : {
+      \     'windows' : 'make -f make_mingw32.mak',
+      \     'cygwin' : 'make -f make_cygwin.mak',
+      \     'mac' : 'make -f make_mac.mak',
+      \     'unix' : 'make -f make_unix.mak',
+      \    },
+     \ }
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'm2mdas/phpcomplete-extended'
 
 " Ruby
 NeoBundle "tpope/vim-rails"
@@ -82,7 +102,9 @@ NeoBundle "thoughtbot/vim-rspec"
 NeoBundle "majutsushi/tagbar"
 NeoBundle "ecomba/vim-ruby-refactoring"
 
-call neobundle#end()
+NeoBundleCheck
+
+cal neobundle#end()
 
 filetype plugin indent on
 
@@ -106,6 +128,8 @@ set laststatus=2
 " CtrlP shortcuts
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Increase CtrlP power with GIT
 set wildmode=list:longest,list:full

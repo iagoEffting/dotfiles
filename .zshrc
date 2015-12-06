@@ -1,11 +1,13 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/home/iago/.oh-my-zsh
+export PHPBREW_SET_PROMPT=1   
+source /Users/Iago/.phpbrew/bashrc
 #
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="fwalch"
+ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -76,5 +78,7 @@ plugins=(git php javascript)
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
+alias ineural="cd ~/Code/Works/Projects/iNeural"
+alias mioloazul="cd ~/Code/Works/mioloazul"
 
 export TERM=xterm-256color
