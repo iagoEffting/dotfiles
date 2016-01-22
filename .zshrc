@@ -1,8 +1,6 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/iago/.oh-my-zsh
-export PHPBREW_SET_PROMPT=1   
-source /Users/Iago/.phpbrew/bashrc
-#
+export ZSH=/Users/Iago/.oh-my-zsh
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -11,6 +9,10 @@ ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -47,12 +49,14 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git php javascript)
+plugins=(git)
 
-# User configuration 
+# User configuration
+
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# source $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -76,9 +80,7 @@ plugins=(git php javascript)
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
-alias ineural="cd ~/Code/Works/Projects/iNeural"
-alias mioloazul="cd ~/Code/Works/mioloazul"
+ alias zshconfig="vim ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export TERM=xterm-256color
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

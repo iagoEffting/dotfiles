@@ -6,6 +6,16 @@ colorscheme gruvbox
 set bg=dark
 set relativenumber 
 
+" Column to limit
+set ruler
+set textwidth=80
+set wrap
+set wrapmargin=0
+set colorcolumn=+1
+
+" ==== Basic commands  ===="
+:nnoremap ;w :w <CR>
+
 " ==== General Configs ====
 let mapleader=","
 set title
@@ -31,6 +41,9 @@ set hlsearch        " Highlight searches by default
 set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
 nnoremap <silent><leader><space> :silent :nohlsearch<CR>
+
+" === Save File ====
+nnoremap <leader><leader> :w
 
 " ==== Swap Files OFF ====
 set noswapfile
@@ -58,11 +71,11 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'tpope/vim-fugitive'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundleFetch 'tomtom/tcomment_vim'
+NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'easymotion/vim-easymotion'
 
 " Git
-NeoBundleFetch 'airblade/vim-gitgutter'
+NeoBundle 'akiomik/git-gutter-vim'
 NeoBundleFetch 'L9'
 NeoBundle 'mattn/gist-vim', {'depends': 'mattn/webapi-vim'}
 
@@ -73,7 +86,7 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'suan/vim-instant-markdown'
 
 " Search
-NeoBundleFetch "rking/ag.vim"
+NeoBundle 'smeggingsmegger/ag.vim'
 
 " Docker
 NeoBundle 'ekalinin/Dockerfile.vim'
@@ -92,7 +105,6 @@ NeoBundle 'Shougo/vimproc', {
       \    },
      \ }
 NeoBundle 'Shougo/unite.vim'
-NeoBundle 'm2mdas/phpcomplete-extended'
 
 " Ruby
 NeoBundle "tpope/vim-rails"
