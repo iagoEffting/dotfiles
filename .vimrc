@@ -81,15 +81,12 @@ NeoBundle 'mattn/gist-vim', {'depends': 'mattn/webapi-vim'}
 
 " Text editing
 NeoBundleFetch "terryma/vim-multiple-cursors"
-NeoBundleFetch "tpope/vim-surround.git"
+NeoBundle "tpope/vim-surround.git"
 NeoBundle 'bling/vim-airline'
 NeoBundle 'suan/vim-instant-markdown'
 
 " Search
 NeoBundle 'smeggingsmegger/ag.vim'
-
-" Docker
-NeoBundle 'ekalinin/Dockerfile.vim'
 
 " Tmux
 NeoBundleFetch 'christoomey/vim-tmux-navigator'
@@ -105,6 +102,7 @@ NeoBundle 'Shougo/vimproc', {
       \    },
      \ }
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'joonty/vim-phpqa.git'
 
 " Ruby
 NeoBundle "tpope/vim-rails"
