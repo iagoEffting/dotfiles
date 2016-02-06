@@ -56,4 +56,7 @@ Crate a symbolic link so that ~/.zshrc points to the ~/dotfiles/.zshrc
 
 Close your bash and open again.
 
+# Key mappinngs
+The `<leader>` key is `,`
+
 Enjoy!
