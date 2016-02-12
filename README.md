@@ -14,6 +14,7 @@
 * [vim-instant-markdown](https://github.com/suan/vim-instant-markdown) - When you open a markdown file in vim, a browser window will open which shows the compiled markdown in real-time
 * [ag.vim](https://github.com/rking/ag.vim) - Search recursively in {directory} (which defaults to the current directory) for the {pattern}. 
 * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors) - Sublime Text-like multiple curors (ctrl+n to go to next word).
+* [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs) - Insert or delete brackets, parens, quotes in pair.
 
 ### PHP
 * [vim-php-namespace](https://github.com/arnaud-lb/vim-php-namespace) - vim plugin for inserting "use" statements automatically. 
@@ -33,15 +34,15 @@ and Install Oh-my-zsh for customize this bash
 Link for [oh-my-zsh quick Installation](https://github.com/robbyrussell/oh-my-zsh)
 
 # Configuration
-In your root directory (cd ~), get the latest code from the repo:
+In your root directory `cd ~`, get the latest code from the repo:
   
 >  git clone git@github.com:iagoEffting/dotfiles.git
 
-Create symbolic link so that ~/.vimrc points to the ~/dotfiles/.vimrc file:
+Create symbolic link so that `~/.vimrc` points to the `~/dotfiles/.vimrc` file:
 
 >  ln -s ~/dotfiles/.vimrc ~/.vimrc
 
-Create symbolic link so that ~/.vim/ points to the ~/dotfiles/.vim/ file:
+Create symbolic link so that `~/.vim/` points to the `~/dotfiles/.vim/` file:
 
 >  ln -s ~/dotfiles/.vim ~/.vim
 
@@ -50,13 +51,13 @@ Install NeoBundle for management your Plugins
 > mkdir -p ~/.vim/bundle
 > git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
-Crate a symbolic link so that ~/.zshrc points to the ~/dotfiles/.zshrc
+Crate a symbolic link so that `~/.zshrc` points to the `~/dotfiles/.zshrc`
 
 > ln -s ~/dotfiles/.zshrc ~/.zshrc
 
 Close your bash and open again.
 
-# Key mappinngs
+# Key mappings
 The `<leader>` key is `,`
 
 Enjoy!

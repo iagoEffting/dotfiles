@@ -84,6 +84,8 @@ NeoBundleFetch "terryma/vim-multiple-cursors"
 NeoBundle "tpope/vim-surround.git"
 NeoBundle 'bling/vim-airline'
 NeoBundle 'suan/vim-instant-markdown'
+NeoBundle 'avakhov/vim-yaml'
+NeoBundle 'jiangmiao/auto-pairs'
 
 " Search
 NeoBundle 'smeggingsmegger/ag.vim'
@@ -156,6 +158,10 @@ map <leader>n :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " ==== Extra and personal ====
+
+" Tags
+nmap <Leader>f :tag<space>
+
 " Disable mouse scroll wheel
 :nmap <ScrollWheelUp> <nop>
 :nmap <S-ScrollWheelUp> <nop>
@@ -175,3 +181,7 @@ map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
+
+
+" Notes and Tips
+" - Press 'zz' to instantly center the line where de cursor is located.

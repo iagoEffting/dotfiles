@@ -28,3 +28,12 @@ let g:phpqa_codecoverage_autorun = 0
 
 " Location list opening automatically
 let g:phpqa_open_loc = 1
+
+" ==== Automatically Namespace ====
+function! IPhpExpandClass()
+	call PhpExpandClass()
+	call feedkeys('a', 'n')
+endfunction
+
+autocmd FileType php inoremap <Leader>e <Esc>:call IPhpExpandClass()<CR>
+autocmd FileType php noremap <Leader>e :call PhpExpandClass()<CR>
