@@ -89,6 +89,7 @@ NeoBundle 'jiangmiao/auto-pairs'
 
 " Search
 NeoBundle 'smeggingsmegger/ag.vim'
+NeoBundle 'skwp/greplace.vim'
 
 " Tmux
 NeoBundleFetch 'christoomey/vim-tmux-navigator'
@@ -133,6 +134,10 @@ set wildignore+=*.gem
 set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
+
+" Search
+set grepprg=ag
+let g:grep_cmd_opts = '--line-numbers --noheading'
 
 " Airline
 set laststatus=2
