@@ -86,6 +86,7 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'suan/vim-instant-markdown'
 NeoBundle 'avakhov/vim-yaml'
 NeoBundle 'jiangmiao/auto-pairs'
+NeoBundle 'mattn/emmet-vim'
 
 " Search
 NeoBundle 'smeggingsmegger/ag.vim'
@@ -106,6 +107,7 @@ NeoBundle 'Shougo/vimproc', {
      \ }
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'joonty/vim-phpqa.git'
+NeoBundle 'adoy/vim-php-refactoring-toolbox'
 
 " Ruby
 NeoBundle "tpope/vim-rails"

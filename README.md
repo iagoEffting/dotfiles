@@ -15,10 +15,12 @@
 * [ag.vim](https://github.com/rking/ag.vim) - Search recursively in {directory} (which defaults to the current directory) for the {pattern}. 
 * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors) - Sublime Text-like multiple curors (ctrl+n to go to next word).
 * [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs) - Insert or delete brackets, parens, quotes in pair.
+* [skwp/greplace.vim](https://github.com/skwp/greplace.vim) - VIM Plugin for doing a search and replace across many files.
 
 ### PHP
 * [vim-php-namespace](https://github.com/arnaud-lb/vim-php-namespace) - vim plugin for inserting "use" statements automatically. 
 * [vim-phpqa](https://github.com/joonty/vim-phpqa) - Integrates PHP quality checking tools
+* [adoy/vim-php-refactoring-toolbox](https://github.com/adoy/vim-php-refactoring-toolbox) - VIM Php Refactoring Toolbox
 
 ## Setup
 # Dependencies
